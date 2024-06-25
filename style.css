@@ -24,7 +24,7 @@ body {
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 35px 55px rgba(0, 0, 0, .5);
 }
 
 .container .left_side
@@ -305,12 +305,14 @@ a{
   background-color: #E6E6E6;
   animation-iteration-count:infinite;
   animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 5s;
   padding:5px;
   margin:5px;
+  border:solid 1px;
+  border-radius:4px;
 }
 @keyframes example {
-  0%   {color:white; }
+  0%   {color:white;}
   25%  {color:grey;}
   50%  {color:black;}
   75%  {color:grey;}
