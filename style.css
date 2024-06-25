@@ -300,7 +300,21 @@ h6{
   color:white;
 }
 a{
-  background-color: grey;
+  width: 100px;
+  height: 100px;
+  background-color: #E6E6E6;
+  animation-iteration-count:infinite;
+  animation-name: example;
+  animation-duration: 10s;
   padding:5px;
-  
+  margin:5px;
 }
+@keyframes example {
+  0%   {color:white; }
+  25%  {color:grey;}
+  50%  {color:black;}
+  75%  {color:grey;}
+  100% {color:white;}
+}
+
+/* The element to apply the animation to */
